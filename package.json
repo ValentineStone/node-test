@@ -1,10 +1,10 @@
 {
-  "name": "note-test",
+  "name": "node-test",
   "version": "0.0.1",
   "description": "Testing node things",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "mjs": "node --no-warnings --experimental-modules index.mjs --experimental-vm-modules"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
     "test",
     "node",
     "es6",
+    "mjs",
     "modules"
   ],
   "author": "Leonid Romanovsky <sirLeonidRomanovsky@gmail.com>",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ValentineStone/node-test/issues"
   },
-  "homepage": "https://github.com/ValentineStone/node-test#readme"
+  "homepage": "https://github.com/ValentineStone/node-test#readme",
+  "dependencies": {
+    "dynamic-imports": "^0.3.0"
+  }
 }
